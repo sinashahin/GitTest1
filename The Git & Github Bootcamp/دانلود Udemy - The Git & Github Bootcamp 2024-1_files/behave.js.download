@@ -1,0 +1,237 @@
+/*
+ * adMagnet
+ * Version 1.1.1
+ *
+ */
+
+'use strict';
+
+(function ($) {
+    $.fn.magnet = function (options) {
+
+        // RequestAnimationFrame
+        var requestTick = function requestTick() {
+            if (this.ticking) return;
+            requestAnimationFrame(updateTransforms.bind(this));
+            this.ticking = true;
+        };
+
+        // Bind mouse movement evens on instance
+        var bindEvents = function bindEvents() {
+            $(this).on('mousemove', mouseMove);
+            $(this).on('mouseenter', mouseEnter);
+            if (this.settings.reset) $(this).on('mouseleave', mouseLeave);
+        };
+
+        // Set transition only on mouse leave and mouse enter
+        var setTransition = function setTransition() {
+            var _this = this;
+
+            if (this.timeout !== undefined) clearTimeout(this.timeout);
+            $(this).css({'transition': this.settings.speed + 'ms ' + this.settings.easing});
+            if (this.settings.glare) this.glareElement.css({'transition': 'opacity ' + this.settings.speed + 'ms ' + this.settings.easing});
+            this.timeout = setTimeout(function () {
+                $(_this).css({'transition': ''});
+                if (_this.settings.glare) _this.glareElement.css({'transition': ''});
+            }, this.settings.speed);
+        };
+
+        // When user mouse enters magnet element
+        var mouseEnter = function mouseEnter(event) {
+            this.ticking = false;
+            $(this).css({'will-change': 'transform'});
+            setTransition.call(this);
+            $(this).trigger("magnet.mouseEnter");
+        };
+
+
+        // Return the x,y position of the mouse on the magnet element
+
+        var getMousePositions = function getMousePositions(event) {
+            if (typeof event === "undefined") {
+                event = {
+                    pageX: $(this).offset().left + $(this).outerWidth() / 2,
+                    pageY: $(this).offset().top + $(this).outerHeight() / 2
+                };
+            }
+            return {x: event.pageX, y: event.pageY};
+        };
+
+        // When user mouse moves over the magnet element
+        var mouseMove = function mouseMove(event) {
+            this.mousePositions = getMousePositions(event);
+            requestTick.call(this);
+        };
+
+        // When user mouse leaves magnet element
+        var mouseLeave = function mouseLeave() {
+            setTransition.call(this);
+            this.reset = true;
+            requestTick.call(this);
+
+            // Trigger change event
+            $(this).trigger("magnet.mouseLeave");
+        };
+
+        // Get magnet values
+        var getValues = function getValues() {
+            var width = $(this).outerWidth();
+            var height = $(this).outerHeight();
+            var left = $(this).offset().left;
+            var top = $(this).offset().top;
+            var percentageX = (this.mousePositions.x - left) / width;
+            var percentageY = (this.mousePositions.y - top) / height;
+            // x or y position inside instance / width of instance = percentage of position inside instance * the max magnet value
+            var magnetX = (this.settings.maxmagnet / 2 - percentageX * this.settings.maxmagnet).toFixed(2);
+            var magnetY = (percentageY * this.settings.maxmagnet - this.settings.maxmagnet / 2).toFixed(2);
+            // angle
+            var angle = Math.atan2(this.mousePositions.x - (left + width / 2), -(this.mousePositions.y - (top + height / 2))) * (180 / Math.PI);
+            return {
+                magnetX: magnetX,
+                magnetY: magnetY,
+                'percentageX': percentageX * 100,
+                'percentageY': percentageY * 100,
+                angle: angle
+            };
+        };
+
+        // Update magnet transforms on mousemove
+        var updateTransforms = function updateTransforms() {
+            this.transforms = getValues.call(this);
+
+            if (this.reset) {
+                this.reset = false;
+                $(this).css('transform', 'perspective(' + this.settings.perspective + 'px) rotateX(0deg) rotateY(0deg)');
+
+                // Rotate glare if enabled
+                if (this.settings.glare) {
+                    this.glareElement.css('transform', 'rotate(180deg) translate(-50%, -50%)');
+                    this.glareElement.css('opacity', '0');
+                }
+
+                return;
+            } else {
+                $(this).css('transform', 'perspective(' + this.settings.perspective + 'px) rotateX(' + (this.settings.axis === 'x' ? 0 : this.transforms.magnetY) + 'deg) rotateY(' + (this.settings.axis === 'y' ? 0 : this.transforms.magnetX) + 'deg) scale3d(' + this.settings.scale + ',' + this.settings.scale + ',' + this.settings.scale + ')');
+
+                // Rotate glare if enabled
+                if (this.settings.glare) {
+                    this.glareElement.css('transform', 'rotate(' + this.transforms.angle + 'deg) translate(-50%, -50%)');
+                    this.glareElement.css('opacity', '' + this.transforms.percentageY * this.settings.maxGlare / 100);
+                }
+            }
+
+            // Trigger change event
+            $(this).trigger("change", [this.transforms]);
+
+            this.ticking = false;
+        };
+
+        // Prepare elements
+        var prepareGlare = function prepareGlare() {
+            var glarePrerender = this.settings.glarePrerender;
+
+            if (!glarePrerender)
+            // Create glare element
+                $(this).append('<div class="js-magnet-glare"><div class="js-magnet-glare-inner"></div></div>');
+
+            // Store glare selector if glare is enabled
+            this.glareElementWrapper = $(this).find(".js-magnet-glare");
+            this.glareElement = $(this).find(".js-magnet-glare-inner");
+
+            if (glarePrerender) return;
+            var stretch = {
+                'position': 'absolute',
+                'top': '0',
+                'left': '0',
+                'width': '100%',
+                'height': '100%'
+            };
+
+            this.glareElementWrapper.css(stretch).css({
+                'overflow': 'hidden'
+            });
+
+            this.glareElement.css({
+                'position': 'absolute',
+                'top': '50%',
+                'left': '50%',
+                'pointer-events': 'none',
+                'background-image': 'linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)',
+                'width': '' + $(this).outerWidth() * 2,
+                'height': '' + $(this).outerWidth() * 2,
+                'transform': 'rotate(180deg) translate(-50%, -50%)',
+                'transform-origin': '0% 0%',
+                'opacity': '0'
+            });
+        };
+
+        $.fn.magnet.destroy = function () {
+            $(this).each(function () {
+                $(this).find('.js-magnet-glare').remove();
+                $(this).css({'will-change': '', 'transform': ''});
+                $(this).off('mousemove mouseenter mouseleave');
+            });
+        };
+
+        $.fn.magnet.getValues = function () {
+            var results = [];
+            $(this).each(function () {
+                this.mousePositions = getMousePositions.call(this);
+                results.push(getValues.call(this));
+            });
+            return results;
+        };
+
+        $.fn.magnet.reset = function () {
+            $(this).each(function () {
+                var _this2 = this;
+
+                this.mousePositions = getMousePositions.call(this);
+                this.settings = $(this).data('settings');
+                mouseLeave.call(this);
+                setTimeout(function () {
+                    _this2.reset = false;
+                }, this.settings.transition);
+            });
+        };
+
+        // Loop every instance
+        return this.each(function () {
+            var _this3 = this;
+
+            this.settings = $.extend({
+                maxmagnet: $(this).is('[data-magnet-max]') ? $(this).data('magnet-max') : 20,
+                perspective: $(this).is('[data-magnet-perspective]') ? $(this).data('magnet-perspective') : 300,
+                easing: $(this).is('[data-magnet-easing]') ? $(this).data('magnet-easing') : 'cubic-bezier(.03,.98,.52,.99)',
+                scale: $(this).is('[data-magnet-scale]') ? $(this).data('magnet-scale') : '1',
+                speed: $(this).is('[data-magnet-speed]') ? $(this).data('magnet-speed') : '400',
+                transition: $(this).is('[data-magnet-transition]') ? $(this).data('magnet-transition') : true,
+                axis: $(this).is('[data-magnet-axis]') ? $(this).data('magnet-axis') : null,
+                reset: $(this).is('[data-magnet-reset]') ? $(this).data('magnet-reset') : true,
+                glare: $(this).is('[data-magnet-glare]') ? $(this).data('magnet-glare') : false,
+                maxGlare: $(this).is('[data-magnet-maxglare]') ? $(this).data('magnet-maxglare') : 1
+            }, options);
+
+            this.init = function () {
+                // Store settings
+                $(_this3).data('settings', _this3.settings);
+                if (_this3.settings.glare) prepareGlare.call(_this3);
+                bindEvents.call(_this3);
+            };
+
+            // Initialize it
+            this.init();
+        });
+    };
+
+    // Auto load it
+    $('[data-magnet]').magnet();
+})(jQuery);
+
+$(document).ready(function () {
+    $('.columns').magnet({
+        perspective: 300,
+        glare: true,
+        maxGlare: .4
+    })
+});

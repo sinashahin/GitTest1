@@ -1,0 +1,11 @@
+.w3-col {width: 100%; padding: 0;}
+
+.post-title {
+    margin-bottom: 25px;
+}	
+
+.logo_text{
+	bottom: calc(((100vw - 10px) / 1.5) - 56px) !important;
+    left: -50px !important;
+	top: unset;
+}

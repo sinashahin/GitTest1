@@ -1,0 +1,1150 @@
+/**
+ * @Last modified by:   Amirhosseinhpv
+ * @Last modified time: 2022/01/16 22:09:10
+ */
+.bslcfc {
+	display: flex;
+	justify-content: left;
+	flex-wrap: nowrap;
+	margin: auto;
+	align-items: center;
+}
+
+table.wp-list-table #author-country {
+	width: 200px;
+}
+
+.country-flag{
+	line-height: 0;
+}
+.country-name {
+	margin-inline: 0.5rem;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag,
+span.countryflag {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background: url("countries.png") no-repeat;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ad,
+.countryflag.cnt-ad {
+	background-position: -3px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ae,
+.countryflag.cnt-ae {
+	background-position: -33px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-af,
+.countryflag.cnt-af {
+	background-position: -3px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ag,
+.countryflag.cnt-ag {
+	background-position: -33px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ai,
+.countryflag.cnt-ai {
+	background-position: -63px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-al,
+.countryflag.cnt-al {
+	background-position: -63px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-am,
+.countryflag.cnt-am {
+	background-position: -3px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-an,
+.countryflag.cnt-an {
+	background-position: -33px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ao,
+.countryflag.cnt-ao {
+	background-position: -63px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-aq,
+.countryflag.cnt-aq {
+	background-position: -93px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ar,
+.countryflag.cnt-ar {
+	background-position: -93px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-as,
+.countryflag.cnt-as {
+	background-position: -93px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-at,
+.countryflag.cnt-at {
+	background-position: -3px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-au,
+.countryflag.cnt-au {
+	background-position: -33px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-aw,
+.countryflag.cnt-aw {
+	background-position: -63px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-az,
+.countryflag.cnt-az {
+	background-position: -93px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ba,
+.countryflag.cnt-ba {
+	background-position: -123px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bb,
+.countryflag.cnt-bb {
+	background-position: -123px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bd,
+.countryflag.cnt-bd {
+	background-position: -123px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-be,
+.countryflag.cnt-be {
+	background-position: -123px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bf,
+.countryflag.cnt-bf {
+	background-position: -3px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bg,
+.countryflag.cnt-bg {
+	background-position: -33px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bh,
+.countryflag.cnt-bh {
+	background-position: -63px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bi,
+.countryflag.cnt-bi {
+	background-position: -93px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bj,
+.countryflag.cnt-bj {
+	background-position: -123px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bm,
+.countryflag.cnt-bm {
+	background-position: -153px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bn,
+.countryflag.cnt-bn {
+	background-position: -153px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bo,
+.countryflag.cnt-bo {
+	background-position: -153px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-br,
+.countryflag.cnt-br {
+	background-position: -153px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bs,
+.countryflag.cnt-bs {
+	background-position: -153px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bt,
+.countryflag.cnt-bt {
+	background-position: -3px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bw,
+.countryflag.cnt-bw {
+	background-position: -33px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-by,
+.countryflag.cnt-by {
+	background-position: -63px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-bz,
+.countryflag.cnt-bz {
+	background-position: -93px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ca,
+.countryflag.cnt-ca {
+	background-position: -123px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cd,
+.countryflag.cnt-cd {
+	background-position: -153px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cf,
+.countryflag.cnt-cf {
+	background-position: -183px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cg,
+.countryflag.cnt-cg {
+	background-position: -183px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ch,
+.countryflag.cnt-ch {
+	background-position: -183px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ci,
+.countryflag.cnt-ci {
+	background-position: -183px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ck,
+.countryflag.cnt-ck {
+	background-position: -183px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cl,
+.countryflag.cnt-cl {
+	background-position: -183px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cm,
+.countryflag.cnt-cm {
+	background-position: -3px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cn,
+.countryflag.cnt-cn {
+	background-position: -33px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-co,
+.countryflag.cnt-co {
+	background-position: -63px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cr,
+.countryflag.cnt-cr {
+	background-position: -93px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cu,
+.countryflag.cnt-cu {
+	background-position: -123px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cv,
+.countryflag.cnt-cv {
+	background-position: -153px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cy,
+.countryflag.cnt-cy {
+	background-position: -183px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-cz,
+.countryflag.cnt-cz {
+	background-position: -213px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-de,
+.countryflag.cnt-de {
+	background-position: -213px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-dj,
+.countryflag.cnt-dj {
+	background-position: -213px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-dk,
+.countryflag.cnt-dk {
+	background-position: -213px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-dm,
+.countryflag.cnt-dm {
+	background-position: -213px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-do,
+.countryflag.cnt-do {
+	background-position: -213px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-dz,
+.countryflag.cnt-dz {
+	background-position: -213px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ec,
+.countryflag.cnt-ec {
+	background-position: -3px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ee,
+.countryflag.cnt-ee {
+	background-position: -33px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-eg,
+.countryflag.cnt-eg {
+	background-position: -63px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-eh,
+.countryflag.cnt-eh {
+	background-position: -93px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-er,
+.countryflag.cnt-er {
+	background-position: -123px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-es,
+.countryflag.cnt-es {
+	background-position: -153px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-et,
+.countryflag.cnt-et {
+	background-position: -183px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-fi,
+.countryflag.cnt-fi {
+	background-position: -213px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-fj,
+.countryflag.cnt-fj {
+	background-position: -243px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-fm,
+.countryflag.cnt-fm {
+	background-position: -243px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-fo,
+.countryflag.cnt-fo {
+	background-position: -243px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-fr,
+.countryflag.cnt-fr {
+	background-position: -243px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ga,
+.countryflag.cnt-ga {
+	background-position: -243px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gb,
+.countryflag.cnt-gb {
+	background-position: -243px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gd,
+.countryflag.cnt-gd {
+	background-position: -243px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ge,
+.countryflag.cnt-ge {
+	background-position: -243px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gg,
+.countryflag.cnt-gg {
+	background-position: -3px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gh,
+.countryflag.cnt-gh {
+	background-position: -33px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gi,
+.countryflag.cnt-gi {
+	background-position: -63px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gl,
+.countryflag.cnt-gl {
+	background-position: -93px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gm,
+.countryflag.cnt-gm {
+	background-position: -123px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gn,
+.countryflag.cnt-gn {
+	background-position: -153px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gp,
+.countryflag.cnt-gp {
+	background-position: -183px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gq,
+.countryflag.cnt-gq {
+	background-position: -213px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gr,
+.countryflag.cnt-gr {
+	background-position: -243px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gt,
+.countryflag.cnt-gt {
+	background-position: -273px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gu,
+.countryflag.cnt-gu {
+	background-position: -273px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gw,
+.countryflag.cnt-gw {
+	background-position: -273px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-gy,
+.countryflag.cnt-gy {
+	background-position: -273px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-hk,
+.countryflag.cnt-hk {
+	background-position: -273px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-hn,
+.countryflag.cnt-hn {
+	background-position: -273px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-hr,
+.countryflag.cnt-hr {
+	background-position: -273px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ht,
+.countryflag.cnt-ht {
+	background-position: -273px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-hu,
+.countryflag.cnt-hu {
+	background-position: -273px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-id,
+.countryflag.cnt-id {
+	background-position: -3px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ie,
+.countryflag.cnt-ie {
+	background-position: -33px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-il,
+.countryflag.cnt-il {
+	background-position: -63px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-im,
+.countryflag.cnt-im {
+	background-position: -93px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mc,
+.countryflag.cnt-mc {
+	background-position: -123px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-in,
+.countryflag.cnt-in {
+	background-position: -153px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-iq,
+.countryflag.cnt-iq {
+	background-position: -183px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ir,
+.countryflag.cnt-ir {
+	background-position: -213px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-is,
+.countryflag.cnt-is {
+	background-position: -243px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-it,
+.countryflag.cnt-it {
+	background-position: -273px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-je,
+.countryflag.cnt-je {
+	background-position: -303px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-jm,
+.countryflag.cnt-jm {
+	background-position: -303px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-jo,
+.countryflag.cnt-jo {
+	background-position: -303px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-jp,
+.countryflag.cnt-jp {
+	background-position: -303px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ke,
+.countryflag.cnt-ke {
+	background-position: -303px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-kg,
+.countryflag.cnt-kg {
+	background-position: -303px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-kh,
+.countryflag.cnt-kh {
+	background-position: -303px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ki,
+.countryflag.cnt-ki {
+	background-position: -303px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-km,
+.countryflag.cnt-km {
+	background-position: -303px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-kn,
+.countryflag.cnt-kn {
+	background-position: -303px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-kp,
+.countryflag.cnt-kp {
+	background-position: -3px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-kr,
+.countryflag.cnt-kr {
+	background-position: -33px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-kw,
+.countryflag.cnt-kw {
+	background-position: -63px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ky,
+.countryflag.cnt-ky {
+	background-position: -93px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-kz,
+.countryflag.cnt-kz {
+	background-position: -123px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-la,
+.countryflag.cnt-la {
+	background-position: -153px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-lb,
+.countryflag.cnt-lb {
+	background-position: -183px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-lc,
+.countryflag.cnt-lc {
+	background-position: -213px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-li,
+.countryflag.cnt-li {
+	background-position: -243px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-lk,
+.countryflag.cnt-lk {
+	background-position: -273px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-lr,
+.countryflag.cnt-lr {
+	background-position: -303px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ls,
+.countryflag.cnt-ls {
+	background-position: -333px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-lt,
+.countryflag.cnt-lt {
+	background-position: -333px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-lu,
+.countryflag.cnt-lu {
+	background-position: -333px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-lv,
+.countryflag.cnt-lv {
+	background-position: -333px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ly,
+.countryflag.cnt-ly {
+	background-position: -333px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ma,
+.countryflag.cnt-ma {
+	background-position: -333px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-md,
+.countryflag.cnt-md {
+	background-position: -333px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-me,
+.countryflag.cnt-me {
+	background-position: -333px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mg,
+.countryflag.cnt-mg {
+	background-position: -333px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mh,
+.countryflag.cnt-mh {
+	background-position: -333px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mk,
+.countryflag.cnt-mk {
+	background-position: -333px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ml,
+.countryflag.cnt-ml {
+	background-position: -3px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mm,
+.countryflag.cnt-mm {
+	background-position: -33px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mn,
+.countryflag.cnt-mn {
+	background-position: -63px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mo,
+.countryflag.cnt-mo {
+	background-position: -93px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mq,
+.countryflag.cnt-mq {
+	background-position: -123px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mr,
+.countryflag.cnt-mr {
+	background-position: -153px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ms,
+.countryflag.cnt-ms {
+	background-position: -183px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mt,
+.countryflag.cnt-mt {
+	background-position: -213px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mu,
+.countryflag.cnt-mu {
+	background-position: -243px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mv,
+.countryflag.cnt-mv {
+	background-position: -273px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mw,
+.countryflag.cnt-mw {
+	background-position: -303px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mx,
+.countryflag.cnt-mx {
+	background-position: -333px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-my,
+.countryflag.cnt-my {
+	background-position: -363px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-mz,
+.countryflag.cnt-mz {
+	background-position: -363px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-na,
+.countryflag.cnt-na {
+	background-position: -363px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-nc,
+.countryflag.cnt-nc {
+	background-position: -363px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ne,
+.countryflag.cnt-ne {
+	background-position: -363px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ng,
+.countryflag.cnt-ng {
+	background-position: -363px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ni,
+.countryflag.cnt-ni {
+	background-position: -363px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-nl,
+.countryflag.cnt-nl {
+	background-position: -363px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-no,
+.countryflag.cnt-no {
+	background-position: -363px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-np,
+.countryflag.cnt-np {
+	background-position: -363px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-nr,
+.countryflag.cnt-nr {
+	background-position: -363px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-nz,
+.countryflag.cnt-nz {
+	background-position: -363px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-om,
+.countryflag.cnt-om {
+	background-position: -3px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pa,
+.countryflag.cnt-pa {
+	background-position: -33px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pe,
+.countryflag.cnt-pe {
+	background-position: -63px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pf,
+.countryflag.cnt-pf {
+	background-position: -93px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pg,
+.countryflag.cnt-pg {
+	background-position: -123px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ph,
+.countryflag.cnt-ph {
+	background-position: -153px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pk,
+.countryflag.cnt-pk {
+	background-position: -183px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pl,
+.countryflag.cnt-pl {
+	background-position: -213px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pr,
+.countryflag.cnt-pr {
+	background-position: -243px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ps,
+.countryflag.cnt-ps {
+	background-position: -273px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pt,
+.countryflag.cnt-pt {
+	background-position: -303px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-pw,
+.countryflag.cnt-pw {
+	background-position: -333px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-py,
+.countryflag.cnt-py {
+	background-position: -363px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-qa,
+.countryflag.cnt-qa {
+	background-position: -393px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-re,
+.countryflag.cnt-re {
+	background-position: -393px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ro,
+.countryflag.cnt-ro {
+	background-position: -393px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-rs,
+.countryflag.cnt-rs {
+	background-position: -393px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ru,
+.countryflag.cnt-ru {
+	background-position: -393px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-rw,
+.countryflag.cnt-rw {
+	background-position: -393px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sa,
+.countryflag.cnt-sa {
+	background-position: -393px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sb,
+.countryflag.cnt-sb {
+	background-position: -393px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sc,
+.countryflag.cnt-sc {
+	background-position: -393px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sd,
+.countryflag.cnt-sd {
+	background-position: -393px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-se,
+.countryflag.cnt-se {
+	background-position: -393px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sg,
+.countryflag.cnt-sg {
+	background-position: -393px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-si,
+.countryflag.cnt-si {
+	background-position: -393px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sk,
+.countryflag.cnt-sk {
+	background-position: -3px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sl,
+.countryflag.cnt-sl {
+	background-position: -33px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sm,
+.countryflag.cnt-sm {
+	background-position: -63px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sn,
+.countryflag.cnt-sn {
+	background-position: -93px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-so,
+.countryflag.cnt-so {
+	background-position: -123px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sr,
+.countryflag.cnt-sr {
+	background-position: -153px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-st,
+.countryflag.cnt-st {
+	background-position: -183px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sv,
+.countryflag.cnt-sv {
+	background-position: -213px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sy,
+.countryflag.cnt-sy {
+	background-position: -243px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-sz,
+.countryflag.cnt-sz {
+	background-position: -273px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tc,
+.countryflag.cnt-tc {
+	background-position: -303px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-td,
+.countryflag.cnt-td {
+	background-position: -333px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tg,
+.countryflag.cnt-tg {
+	background-position: -363px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-th,
+.countryflag.cnt-th {
+	background-position: -393px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tj,
+.countryflag.cnt-tj {
+	background-position: -423px -3px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tl,
+.countryflag.cnt-tl {
+	background-position: -423px -33px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tm,
+.countryflag.cnt-tm {
+	background-position: -423px -63px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tn,
+.countryflag.cnt-tn {
+	background-position: -423px -93px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-to,
+.countryflag.cnt-to {
+	background-position: -423px -123px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tr,
+.countryflag.cnt-tr {
+	background-position: -423px -153px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tt,
+.countryflag.cnt-tt {
+	background-position: -423px -183px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tv,
+.countryflag.cnt-tv {
+	background-position: -423px -213px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tw,
+.countryflag.cnt-tw {
+	background-position: -423px -243px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-tz,
+.countryflag.cnt-tz {
+	background-position: -423px -273px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ua,
+.countryflag.cnt-ua {
+	background-position: -423px -303px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ug,
+.countryflag.cnt-ug {
+	background-position: -423px -333px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-us,
+.countryflag.cnt-us {
+	background-position: -423px -363px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-uy,
+.countryflag.cnt-uy {
+	background-position: -423px -393px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-uz,
+.countryflag.cnt-uz {
+	background-position: -3px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-va,
+.countryflag.cnt-va {
+	background-position: -33px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-vc,
+.countryflag.cnt-vc {
+	background-position: -63px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ve,
+.countryflag.cnt-ve {
+	background-position: -93px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-vg,
+.countryflag.cnt-vg {
+	background-position: -123px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-vi,
+.countryflag.cnt-vi {
+	background-position: -153px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-vn,
+.countryflag.cnt-vn {
+	background-position: -183px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-vu,
+.countryflag.cnt-vu {
+	background-position: -213px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ws,
+.countryflag.cnt-ws {
+	background-position: -243px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-xxx,
+.countryflag.cnt-xxx {
+	background-position: -273px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-ye,
+.countryflag.cnt-ye {
+	background-position: -303px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-za,
+.countryflag.cnt-za {
+	background-position: -333px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-zm,
+.countryflag.cnt-zm {
+	background-position: -363px -423px;
+}
+
+.w-comments-item-meta .w-comments-item-author span.countryflag.cnt-zw,
+.countryflag.cnt-zw {
+	background-position: -393px -423px;
+}

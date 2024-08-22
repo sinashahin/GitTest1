@@ -1,0 +1,43 @@
+/* static-post 3-col (min-width: 566px) (max-width: 800px) customized by meisam hallajy */
+
+.cmp {
+	height: calc(50vh - 14px);
+}
+
+.columns { 
+	width: calc((100vw - 24px) /3);
+}
+
+.cmp-title {
+	height: calc((50vh - 44px) - ((100vw - 24px) / 4.5));
+}
+
+.cmp-cover {
+	height: calc((100vw - 24px) / 4.5);
+}
+
+.badge_text{  
+	width: 34vw;
+    top: 5vw;
+    left: -11vw;
+}
+
+@media (max-width: 565px) {
+.columns { width: calc((100vw - 16px) / 2) !important;}
+.cmp-cover {height: calc((100vw - 16px) / 3.1) !important;}
+.cmp-title {height: calc((50vh - 44px) - ((100vw - 16px) / 3.15)) !important;}
+.logo_text {bottom: calc(50vh - 40px);right: calc(50vw - 136px) !important;}
+.index3 {display:none}
+.index6 {display:none}
+}
+
+@media (max-width: 250px) {
+.columns { width: calc(100vw - 8px) !important;}
+.cmp-cover {height: calc((100vw - 8px) / 2) !important;}
+.cmp-title {height: calc((50vh - 44px) - ((100vw - 8px) / 2)) !important;}
+.logo_text {bottom: calc(50vh - 44px); right: calc(100vw - 136px) !important;}
+.index2 {display:none}
+.index3 {display:none}
+.index5 {display:none}
+.index6 {display:none}
+}

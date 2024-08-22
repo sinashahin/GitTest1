@@ -1,0 +1,9 @@
+.cmp-title {
+	color: black;
+	text-shadow: 0 0.4px #fff;
+	background: linear-gradient(115deg, rgba(222, 222, 222, 0.22) 0%,rgba(224, 224, 224, 0.3) 50%,rgba(216, 216, 216, 0.53) 50%,rgba(226, 226, 226, 0.28) 100%);
+}
+
+.cmp {border: 1px solid #9a9a9a;}
+
+.background {background: white;}

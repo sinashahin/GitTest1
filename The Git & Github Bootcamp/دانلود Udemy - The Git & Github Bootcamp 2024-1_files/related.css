@@ -1,0 +1,113 @@
+body {
+	direction: rtl;
+	background: white;
+}
+
+* {
+	transition: 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+@-webkit-keyframes attract {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+@-moz-keyframes attract {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+@keyframes attract {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+
+.badge_text{  
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	top: 18%;
+	left: -32%;
+	margin:0;
+	transform: rotate(-45deg);
+	font-family: yekan;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 2px;
+	
+	background: #de1b31;
+}
+
+.kaprila-badge a img {top: 0px; left: -4px; margin: 0;}
+.kaprila-badge a span {left: -7px; top: -2px;}
+
+.w3-col {
+	float: right;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 120%;
+	border-bottom: 2px solid #92c6f0;
+	margin-bottom: 10px;
+	padding:0 10px 5px 0;
+}
+
+.posts-list {
+	overflow-y: hidden;
+}
+
+.post {
+	position: relative;
+	text-align: center;
+	padding: 0 5px;
+	display: block;
+	color: #000;
+	padding-bottom:10px;
+	
+}
+
+.post:hover {
+	color: #f50;
+}
+
+.post:hover img.cover {
+	opacity: 0.85;
+	transform: scale(1.15);
+}
+
+.post-image {
+	margin-bottom: 2px;
+	overflow: hidden;
+	position: relative;
+}
+
+.post-image img.cover {
+	width: 100%;
+	object-fit: cover;
+	border: solid #ddd 1px;
+}
+
+.post-title {
+	text-align: right;
+	margin-bottom: 10px;
+	padding:0 7px;
+}
+
+.post-title ,.post-title .important{
+	font-size:1em;
+}
+
+span.ltr {
+	direction: ltr;
+	font-size: 90%;
+	top: -1px !important;
+}
+
